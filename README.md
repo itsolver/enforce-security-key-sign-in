@@ -22,7 +22,7 @@ This CMD script enforces the use of Security Keys for signing into Windows compu
 3. If UAC prompt: allow changes by signing in as admin (if current user doesn't have admin).
 5. Wait for the Command Prompt window to complete the script execution.
 
-### Step 3: Lock computer to see changes
+### Step 3: Lock computer to confirm only Security Key is sign in option
 - Changes take effect instantly.
 
 ## Warning
