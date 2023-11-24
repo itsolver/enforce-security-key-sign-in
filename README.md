@@ -32,5 +32,6 @@ This CMD script enforces the use of Security Keys for signing into Windows compu
 
 # Credit and References
 Thanks to Jonas Markström for sharing your knowledge.
-[Three ways of enabling security key sign-in on Windows 10 & Windows 11](https://swjm.blog/three-ways-of-enabling-security-key-sign-in-on-windows-10-windows-11-5c93a85727cc)
-[https://swjm.blog/fido2-security-key-sign-in-with-azure-ad-in-5-simple-steps-44ae0a71dc34](https://swjm.blog/fido2-security-key-sign-in-with-azure-ad-in-5-simple-steps-44ae0a71dc34)
+
+- [Three ways of enabling security key sign-in on Windows 10 & Windows 11](https://swjm.blog/three-ways-of-enabling-security-key-sign-in-on-windows-10-windows-11-5c93a85727cc)
+- [https://swjm.blog/fido2-security-key-sign-in-with-azure-ad-in-5-simple-steps-44ae0a71dc34](https://swjm.blog/fido2-security-key-sign-in-with-azure-ad-in-5-simple-steps-44ae0a71dc34)
