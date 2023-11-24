@@ -1,7 +1,7 @@
 # Enforce Security Key Sign-in
 
 ## Important Requirement
-Before using this script, you must have enabled the FIDO2 Security Key method within Entra (formerly Azure AD) and added a security key to your account. For guidance on this, refer to Microsoft's documentation: [User registration and management of FIDO2 Security Keys](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key#user-registration-and-management-of-fido2-security-keys).
+Before using this script, you must have enabled the FIDO2 Security Key method within Entra (formerly Azure AD) and added a security key to your account. For guidance on this, refer to References.
 
 ## Description
 This CMD script enforces the use of Security Keys for signing into Windows computers by disabling Windows Hello PIN and other sign-in methods. Ideal for environments requiring enhanced security through physical security keys.
@@ -32,6 +32,6 @@ This CMD script enforces the use of Security Keys for signing into Windows compu
 
 # Credit and References
 Thanks to Jonas Markström for sharing your knowledge.
-
+- [User registration and management of FIDO2 Security Keys](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key#user-registration-and-management-of-fido2-security-keys)
 - [Three ways of enabling security key sign-in on Windows 10 & Windows 11](https://swjm.blog/three-ways-of-enabling-security-key-sign-in-on-windows-10-windows-11-5c93a85727cc)
 - [https://swjm.blog/fido2-security-key-sign-in-with-azure-ad-in-5-simple-steps-44ae0a71dc34](https://swjm.blog/fido2-security-key-sign-in-with-azure-ad-in-5-simple-steps-44ae0a71dc34)
