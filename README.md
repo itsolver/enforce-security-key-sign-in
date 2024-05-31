@@ -31,6 +31,8 @@ This CMD script enforces the use of Security Keys for signing into Windows compu
 - Ensure you have a backup or recovery plan.
 
 # Remote access with Teamviewer - Install Security Key Redirection
+Issues: only works with Windows 8+; cannot remote from Mac to Windows using Security key redirection.
+
 1. On the remote computer, open Teamviewer with a user that has local admin rights. 
 2. Go to Teamviewer options > Security > Security key redirection > Install
 
