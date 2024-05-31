@@ -30,12 +30,22 @@ This CMD script enforces the use of Security Keys for signing into Windows compu
 - Test the script in a non-production environment first.
 - Ensure you have a backup or recovery plan.
 
-# Remote access with Teamviewer
+# Remote access with Teamviewer - Install Security Key Redirection
 1. On the remote computer, open Teamviewer with a user that has local admin rights. 
 2. Go to Teamviewer options > Security > Security key redirection > Install
-   
+
+## Teamviewer - Use security key redirection
+On the local computer, plug in the security key during the TeamViewer session.
+
+Any time during a session, go to Files & Extras and click on Redirect security key. This will list all compatible security keys.
+Clicking on Start redirection will make them available on the remote computer.
+
+To stop the redirection, go to Files & Extras and click on Enable security key. This will list all security keys that are redirected to the remote computer.
+Clicking on Stop redirection will stop the redirection of all available security keys.
+
 # Credit and References
 Thanks to Jonas Markström for sharing your knowledge.
 - [User registration and management of FIDO2 Security Keys](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key#user-registration-and-management-of-fido2-security-keys)
 - [Three ways of enabling security key sign-in on Windows 10 & Windows 11](https://swjm.blog/three-ways-of-enabling-security-key-sign-in-on-windows-10-windows-11-5c93a85727cc)
 - [FIDO2 security key sign-in with Azure AD (Entra ID) in five simple steps](https://swjm.blog/fido2-security-key-sign-in-with-azure-ad-in-5-simple-steps-44ae0a71dc34)
+- [Teamviewer Security Key Redirection](https://www.teamviewer.com/en-au/global/support/knowledge-base/teamviewer-tensor-classic/security/security-key-redirection/)
