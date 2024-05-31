@@ -30,6 +30,10 @@ This CMD script enforces the use of Security Keys for signing into Windows compu
 - Test the script in a non-production environment first.
 - Ensure you have a backup or recovery plan.
 
+# Remote access with Teamviewer
+1. On the remote computer, open Teamviewer with a user that has local admin rights. 
+2. Go to Teamviewer options > Security > Security key redirection > Install
+   
 # Credit and References
 Thanks to Jonas Markström for sharing your knowledge.
 - [User registration and management of FIDO2 Security Keys](https://learn.microsoft.com/en-us/entra/identity/authentication/howto-authentication-passwordless-security-key#user-registration-and-management-of-fido2-security-keys)
