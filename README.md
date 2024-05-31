@@ -30,9 +30,15 @@ This CMD script enforces the use of Security Keys for signing into Windows compu
 - Test the script in a non-production environment first.
 - Ensure you have a backup or recovery plan.
 
-# Remote access with Teamviewer - Install Security Key Redirection
-Issues: only works with Windows 8+; cannot remote from Mac to Windows using Security key redirection.
+# Remote access with SplashTop
+Available in the Splashtop Business Access Performance and Splashtop Enterprise packages, this feature enables users to redirect a USB device from their local computer to the remote computer. See [SplashTop Pricing](https://www.splashtop.com/pricing)
 
+# Remote access with Teamviewer
+## Prequisities / limitations
+- Requires a TeamViewer Tensor license.
+- No active RDP session on the remote side and that LAN mode is deactivated.
+
+## Install Security Key Redirection
 1. On the remote computer, open Teamviewer with a user that has local admin rights. 
 2. Go to Teamviewer options > Security > Security key redirection > Install
 
@@ -51,3 +57,4 @@ Thanks to Jonas Markström for sharing your knowledge.
 - [Three ways of enabling security key sign-in on Windows 10 & Windows 11](https://swjm.blog/three-ways-of-enabling-security-key-sign-in-on-windows-10-windows-11-5c93a85727cc)
 - [FIDO2 security key sign-in with Azure AD (Entra ID) in five simple steps](https://swjm.blog/fido2-security-key-sign-in-with-azure-ad-in-5-simple-steps-44ae0a71dc34)
 - [Teamviewer Security Key Redirection](https://www.teamviewer.com/en-au/global/support/knowledge-base/teamviewer-tensor-classic/security/security-key-redirection/)
+- [SplashTop pricing](https://www.splashtop.com/pricing)
