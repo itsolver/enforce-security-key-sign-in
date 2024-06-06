@@ -24,7 +24,7 @@ CD /D "%~dp0"
 REM Enable Security Key Sign in
 REG ADD "HKLM\SOFTWARE\policies\Microsoft\FIDO" /v EnableFIDODeviceLogon /t REG_DWORD /d 1 /f
 
-echo Credential providers modification completed.
+echo Security key sign-in is enabled
 pause
 
 popd
