@@ -1,5 +1,11 @@
 @echo off
-echo Starting to modify credential providers.
+echo This script re-enables all sign-in methods, including password, PIN, picture password, and other options, after they have been disabled.
+set /p continue=Do you want to continue (Y/N)? 
+if /i "%continue%" == "Y" goto :continue
+exit
+
+:continue
+echo Continuing to enforce security key sign-in...
 :: Self-elevate the script if required
 NET FILE 1>NUL 2>NUL
 if '%errorlevel%' == '0' ( goto :gotAdmin ) else ( goto :UACPrompt )

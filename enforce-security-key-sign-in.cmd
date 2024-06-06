@@ -1,5 +1,17 @@
 @echo off
-echo Starting to modify credential providers.
+echo This script enforces the use of security key sign-in by disabling other sign-in methods.
+echo This will disable password, PIN, picture password, and other sign-in options.
+echo This is a permanent change and will require a security key to sign in.
+echo To restore the previous sign-in options, you'll need to run the allow-all-sign-in-methods.cmd script. 
+echo: This may require offline access with a Windows USB tool and, in some cases, the BitLocker Recovery key.
+set /p continue=Do you want to continue (Y/N)? 
+if /i "%continue%" == "Y" goto :continue
+exit
+
+:continue
+echo Continuing to enforce security key sign-in...
+
+
 :: Self-elevate the script if required
 NET FILE 1>NUL 2>NUL
 if '%errorlevel%' == '0' ( goto :gotAdmin ) else ( goto :UACPrompt )
