@@ -6,12 +6,17 @@ echo To restore the previous sign-in options, you'll need to run the allow-all-s
 echo: This may require offline access with a Windows USB tool and, in some cases, the BitLocker Recovery key.
 set /p continue=Do you want to continue (Y/N)? 
 if /i "%continue%" == "Y" goto :continue
+
+
 exit
 
 :continue
 echo Continuing to enforce security key sign-in...
+echo Please confirm that you have a security key set up in Windows Settings > Accounts > Sign-in options.
+set /p continue=Do you have a security key set up (Y/N)? 
+if /i "%continue%" == "Y" goto :continue2
 
-
+:continue2
 :: Self-elevate the script if required
 NET FILE 1>NUL 2>NUL
 if '%errorlevel%' == '0' ( goto :gotAdmin ) else ( goto :UACPrompt )
